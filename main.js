@@ -3,9 +3,12 @@ const navLinks = document.getElementById("nav-links");
 
 
 menuBtn.addEventListener("click", (e) => {
-    navLinks.classList.toggle("open");
-    const isOpen = navLinks.classList.contains("open");
-    menuBtn.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+    menuBtn.classList.toggle('ri-close-line');
+    navLinks.classList.toggle('open');
+    // navLinks.classList.toggle("open");
+    // const isOpen = navLinks.classList.contains("open");
+    // menuBtn.classList.remove("ri-menu-line", "ri-close-line");
+    // menuBtn.classList.add(isOpen ? "ri-close-line" : "ri-menu-line");
 });
 
 
